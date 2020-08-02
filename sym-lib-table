@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name utsvt-connectors)(type Legacy)(uri ${KIPRJMOD}/common/utsvt-connectors.lib)(options "")(descr ""))
+  (lib (name utsvt-power-regulators)(type Legacy)(uri ${KIPRJMOD}/common/utsvt-power-regulators.lib)(options "")(descr ""))
+)
