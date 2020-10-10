@@ -16,7 +16,7 @@ $EndDescr
 Text Notes 650  7600 0    50   ~ 0
 ID_SD and ID_SC PINS:\nThese pins are reserved for HAT ID EEPROM.\n\nAt boot time this I2C interface will be\ninterrogated to look for an EEPROM\nthat identifes the attached board and\nallows automagic setup of the GPIOs\n(and optionally, Linux drivers).\n\nDO NOT USE these pins for anything other\nthan attaching an I2C ID EEPROM. Leave\nunconnected if ID EEPROM not required.
 $Comp
-L BPSDisplay-rescue:Mounting_Hole-Mechanical MK1
+L BPSDisplay-rescue:Mounting_Hole-Mechanical-BPSDisplay-rescue MK1
 U 1 1 5834FB2E
 P 3000 7200
 F 0 "MK1" H 3100 7246 50  0000 L CNN
@@ -27,7 +27,7 @@ F 3 "" H 3000 7200 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L BPSDisplay-rescue:Mounting_Hole-Mechanical MK2
+L BPSDisplay-rescue:Mounting_Hole-Mechanical-BPSDisplay-rescue MK2
 U 1 1 5834FBEF
 P 3450 7200
 F 0 "MK2" H 3550 7246 50  0000 L CNN
@@ -38,7 +38,7 @@ F 3 "" H 3450 7200 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L BPSDisplay-rescue:Mounting_Hole-Mechanical MK4
+L BPSDisplay-rescue:Mounting_Hole-Mechanical-BPSDisplay-rescue MK4
 U 1 1 5834FC19
 P 3000 7400
 F 0 "MK4" H 3100 7446 50  0000 L CNN
@@ -785,14 +785,6 @@ Text Label 7250 4600 2    50   ~ 0
 CAN2_TX
 Text Label 7250 4500 2    50   ~ 0
 CAN2_RX
-Wire Wire Line
-	1900 3950 2400 3950
-Wire Wire Line
-	2400 4050 1900 4050
-Text Label 2400 3950 2    50   ~ 0
-CAN2_TX
-Text Label 2400 4050 2    50   ~ 0
-CAN2_RX
 $Comp
 L power:GND #PWR019
 U 1 1 5D6E7067
@@ -805,35 +797,9 @@ F 3 "" H 2000 4250 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2000 4250 2000 4150
-Wire Wire Line
 	2000 4150 1900 4150
 Wire Wire Line
 	2250 3850 1900 3850
-$Comp
-L Connector_Generic:Conn_02x06_Counter_Clockwise J2
-U 1 1 5D725DDF
-P 9600 3350
-F 0 "J2" H 9650 3767 50  0000 C CNN
-F 1 "Conn_02x06_Counter_Clockwise" H 9650 3676 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Vertical" H 9600 3350 50  0001 C CNN
-F 3 "~" H 9600 3350 50  0001 C CNN
-	1    9600 3350
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR015
-U 1 1 5D7263C8
-P 8450 3150
-F 0 "#PWR015" H 8450 2900 50  0001 C CNN
-F 1 "GND" H 8455 2977 50  0000 C CNN
-F 2 "" H 8450 3150 50  0001 C CNN
-F 3 "" H 8450 3150 50  0001 C CNN
-	1    8450 3150
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	8450 3150 9400 3150
 Text Notes 7550 2600 0    50   ~ 0
 DC
 Text Notes 7550 2700 0    50   ~ 0
@@ -848,56 +814,20 @@ Text Notes 7550 2300 0    50   ~ 0
 MISO
 Text Notes 7550 2200 0    50   ~ 0
 SCK
-Wire Wire Line
-	9400 3250 8650 3250
-Wire Wire Line
-	9400 3350 8650 3350
-Wire Wire Line
-	8650 3450 9400 3450
-Wire Wire Line
-	9400 3550 8650 3550
-Wire Wire Line
-	8650 3650 9400 3650
-Wire Wire Line
-	9900 3250 10650 3250
-Wire Wire Line
-	10650 3150 9900 3150
-Text Label 8650 3450 0    50   ~ 0
-GPIO10(SPI0_MOSI)
-Text Label 8650 3350 0    50   ~ 0
-GPIO9(SPI0_MISO)
-Text Label 8650 3250 0    50   ~ 0
-GPIO11(SPI0_SCK)
-Text Label 8650 3550 0    50   ~ 0
-GPIO8(SPI0_CE_N)
-Text Label 8650 3650 0    50   ~ 0
-GPIO25(GEN6)
-Text Label 10650 3250 2    50   ~ 0
-GPIO17(GEN0)
-Text Label 10650 3150 2    50   ~ 0
-GPIO24(GEN5)
-Text Notes 8600 3650 2    50   ~ 0
+Text Notes 8700 5200 2    50   ~ 0
 DC
-Text Notes 10700 3250 0    50   ~ 0
+Text Notes 8550 5400 0    50   ~ 0
 RST
-Text Notes 10700 3150 0    50   ~ 0
+Text Notes 8550 5300 0    50   ~ 0
 BUSY
-Text Notes 8600 3550 2    50   ~ 0
+Text Notes 8450 4650 2    50   ~ 0
 CS
-Text Notes 8600 3450 2    50   ~ 0
+Text Notes 8500 4550 2    50   ~ 0
 MOSI
-Text Notes 8600 3350 2    50   ~ 0
+Text Notes 8500 4450 2    50   ~ 0
 MISO
-Text Notes 8600 3250 2    50   ~ 0
+Text Notes 8500 4350 2    50   ~ 0
 SCK
-Wire Wire Line
-	9900 3550 10400 3550
-Wire Wire Line
-	10400 3650 9900 3650
-Text Label 10400 3550 2    50   ~ 0
-CAN2_TX
-Text Label 10400 3650 2    50   ~ 0
-CAN2_RX
 Wire Wire Line
 	5350 3900 4850 3900
 Wire Wire Line
@@ -905,14 +835,6 @@ Wire Wire Line
 Text Label 4850 3900 0    50   ~ 0
 USART6_TX
 Text Label 4850 4000 0    50   ~ 0
-USART6_RX
-Wire Wire Line
-	9900 3350 10400 3350
-Wire Wire Line
-	10400 3450 9900 3450
-Text Label 10400 3350 2    50   ~ 0
-USART6_TX
-Text Label 10400 3450 2    50   ~ 0
 USART6_RX
 $Comp
 L power:GND #PWR025
@@ -996,7 +918,7 @@ NoConn ~ 5350 3300
 NoConn ~ 5350 3400
 NoConn ~ 5350 3500
 $Comp
-L BPSDisplay-rescue:Mounting_Hole-Mechanical MK3
+L BPSDisplay-rescue:Mounting_Hole-Mechanical-BPSDisplay-rescue MK3
 U 1 1 5D979DD2
 P 4650 7200
 F 0 "MK3" H 4750 7246 50  0000 L CNN
@@ -1007,7 +929,7 @@ F 3 "" H 4650 7200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L BPSDisplay-rescue:Mounting_Hole-Mechanical MK5
+L BPSDisplay-rescue:Mounting_Hole-Mechanical-BPSDisplay-rescue MK5
 U 1 1 5D97A2E5
 P 4650 7400
 F 0 "MK5" H 4750 7446 50  0000 L CNN
@@ -1058,4 +980,156 @@ Wire Wire Line
 Connection ~ 2750 1100
 Wire Wire Line
 	2750 1100 2750 1200
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5F790F74
+P 5150 2100
+F 0 "#FLG0101" H 5150 2175 50  0001 C CNN
+F 1 "PWR_FLAG" V 5150 2227 50  0000 L CNN
+F 2 "" H 5150 2100 50  0001 C CNN
+F 3 "~" H 5150 2100 50  0001 C CNN
+	1    5150 2100
+	0    -1   -1   0   
+$EndComp
+Connection ~ 5150 2100
+$Comp
+L Connector_Generic:Conn_01x05 J7
+U 1 1 5F8B1965
+P 9650 4450
+F 0 "J7" H 9730 4492 50  0000 L CNN
+F 1 "SPI0_LogicAnalyzer" H 9730 4401 50  0000 L CNN
+F 2 "" H 9650 4450 50  0001 C CNN
+F 3 "~" H 9650 4450 50  0001 C CNN
+	1    9650 4450
+	1    0    0    -1  
+$EndComp
+Text Label 8500 4350 0    50   ~ 0
+GPIO11(SPI0_SCK)
+Text Label 8500 4450 0    50   ~ 0
+GPIO9(SPI0_MISO)
+Text Label 8500 4550 0    50   ~ 0
+GPIO10(SPI0_MOSI)
+Text Label 8500 4650 0    50   ~ 0
+GPIO8(SPI0_CE_N)
+$Comp
+L BPSDisplay:GND #PWR020
+U 1 1 5F8C3D7F
+P 9400 4150
+F 0 "#PWR020" H 9400 3900 50  0001 C CNN
+F 1 "GND" H 9405 3977 50  0000 C CNN
+F 2 "" H 9400 4150 50  0000 C CNN
+F 3 "" H 9400 4150 50  0000 C CNN
+	1    9400 4150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9450 4250 9400 4250
+Wire Wire Line
+	9400 4250 9400 4150
+Wire Wire Line
+	9450 4450 8500 4450
+Wire Wire Line
+	9450 4350 8500 4350
+Wire Wire Line
+	9450 4550 8500 4550
+Wire Wire Line
+	9450 4650 8500 4650
+$Comp
+L Connector_Generic:Conn_01x04 J8
+U 1 1 5F9133E1
+P 9650 5200
+F 0 "J8" H 9730 5192 50  0000 L CNN
+F 1 "GEN_LogicAnalyzer" H 9730 5101 50  0000 L CNN
+F 2 "" H 9650 5200 50  0001 C CNN
+F 3 "~" H 9650 5200 50  0001 C CNN
+	1    9650 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L BPSDisplay:GND #PWR022
+U 1 1 5F91429A
+P 9450 5000
+F 0 "#PWR022" H 9450 4750 50  0001 C CNN
+F 1 "GND" H 9455 4827 50  0000 C CNN
+F 2 "" H 9450 5000 50  0000 C CNN
+F 3 "" H 9450 5000 50  0000 C CNN
+	1    9450 5000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9450 5100 9450 5000
+Text Label 8750 5200 0    50   ~ 0
+GPIO25(GEN6)
+Text Label 8750 5300 0    50   ~ 0
+GPIO24(GEN5)
+Text Label 8750 5400 0    50   ~ 0
+GPIO17(GEN0)
+Wire Wire Line
+	9450 5200 8750 5200
+Wire Wire Line
+	9450 5300 8750 5300
+Wire Wire Line
+	9450 5400 8750 5400
+$Comp
+L Connector_Generic:Conn_01x03 J9
+U 1 1 5F937701
+P 9650 5950
+F 0 "J9" H 9730 5992 50  0000 L CNN
+F 1 "USART_LogicAnalyzer" H 9730 5901 50  0000 L CNN
+F 2 "" H 9650 5950 50  0001 C CNN
+F 3 "~" H 9650 5950 50  0001 C CNN
+	1    9650 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L BPSDisplay:GND #PWR029
+U 1 1 5F937BE0
+P 9450 5750
+F 0 "#PWR029" H 9450 5500 50  0001 C CNN
+F 1 "GND" H 9455 5577 50  0000 C CNN
+F 2 "" H 9450 5750 50  0000 C CNN
+F 3 "" H 9450 5750 50  0000 C CNN
+	1    9450 5750
+	-1   0    0    1   
+$EndComp
+Text Label 8750 5950 0    50   ~ 0
+USART6_TX
+Text Label 8750 6050 0    50   ~ 0
+USART6_RX
+Wire Wire Line
+	9450 5850 9450 5750
+Wire Wire Line
+	9450 5950 8750 5950
+Wire Wire Line
+	9450 6050 8750 6050
+Wire Wire Line
+	2000 4200 2000 4250
+Wire Wire Line
+	2000 4150 2000 4200
+Connection ~ 2000 4200
+Wire Wire Line
+	2550 4200 2000 4200
+Wire Wire Line
+	2550 3850 2550 4200
+Wire Wire Line
+	2700 3850 2550 3850
+Wire Wire Line
+	2700 4050 1900 4050
+Wire Wire Line
+	2700 3950 1900 3950
+$Comp
+L Connector_Generic:Conn_01x03 J6
+U 1 1 5F84797F
+P 2900 3950
+F 0 "J6" H 2980 3992 50  0000 L CNN
+F 1 "CAN_LogicAnalyzer" H 2980 3901 50  0000 L CNN
+F 2 "" H 2900 3950 50  0001 C CNN
+F 3 "~" H 2900 3950 50  0001 C CNN
+	1    2900 3950
+	1    0    0    -1  
+$EndComp
+Text Label 2400 4050 2    50   ~ 0
+CAN2_RX
+Text Label 2400 3950 2    50   ~ 0
+CAN2_TX
 $EndSCHEMATC
