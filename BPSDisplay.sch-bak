@@ -356,7 +356,7 @@ U 1 1 59AD464A
 P 2250 2000
 F 0 "P1" H 2300 3117 50  0000 C CNN
 F 1 "Conn_02x20_Odd_Even" H 2300 3026 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Vertical" H -2600 1050 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Horizontal" H -2600 1050 50  0001 C CNN
 F 3 "" H -2600 1050 50  0001 C CNN
 	1    2250 2000
 	1    0    0    -1  
@@ -998,7 +998,7 @@ U 1 1 5F8B1965
 P 9650 4450
 F 0 "J7" H 9730 4492 50  0000 L CNN
 F 1 "SPI0_LogicAnalyzer" H 9730 4401 50  0000 L CNN
-F 2 "" H 9650 4450 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Horizontal" H 9650 4450 50  0001 C CNN
 F 3 "~" H 9650 4450 50  0001 C CNN
 	1    9650 4450
 	1    0    0    -1  
@@ -1040,7 +1040,7 @@ U 1 1 5F9133E1
 P 9650 5200
 F 0 "J8" H 9730 5192 50  0000 L CNN
 F 1 "GEN_LogicAnalyzer" H 9730 5101 50  0000 L CNN
-F 2 "" H 9650 5200 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Horizontal" H 9650 5200 50  0001 C CNN
 F 3 "~" H 9650 5200 50  0001 C CNN
 	1    9650 5200
 	1    0    0    -1  
@@ -1076,7 +1076,7 @@ U 1 1 5F937701
 P 9650 5950
 F 0 "J9" H 9730 5992 50  0000 L CNN
 F 1 "USART_LogicAnalyzer" H 9730 5901 50  0000 L CNN
-F 2 "" H 9650 5950 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal" H 9650 5950 50  0001 C CNN
 F 3 "~" H 9650 5950 50  0001 C CNN
 	1    9650 5950
 	1    0    0    -1  
@@ -1102,74 +1102,6 @@ Wire Wire Line
 	9450 5950 8750 5950
 Wire Wire Line
 	9450 6050 8750 6050
-$Comp
-L power:GND #PWR015
-U 1 1 5D7263C8
-P 8450 3150
-F 0 "#PWR015" H 8450 2900 50  0001 C CNN
-F 1 "GND" H 8455 2977 50  0000 C CNN
-F 2 "" H 8450 3150 50  0001 C CNN
-F 3 "" H 8450 3150 50  0001 C CNN
-	1    8450 3150
-	0    1    1    0   
-$EndComp
-Text Label 10400 3450 2    50   ~ 0
-USART6_RX
-Text Label 10400 3350 2    50   ~ 0
-USART6_TX
-Wire Wire Line
-	10400 3450 9900 3450
-Wire Wire Line
-	9900 3350 10400 3350
-Text Label 10400 3650 2    50   ~ 0
-CAN2_RX
-Text Label 10400 3550 2    50   ~ 0
-CAN2_TX
-Wire Wire Line
-	10400 3650 9900 3650
-Wire Wire Line
-	9900 3550 10400 3550
-Text Label 10650 3150 2    50   ~ 0
-GPIO24(GEN5)
-Text Label 10650 3250 2    50   ~ 0
-GPIO17(GEN0)
-Text Label 8650 3650 0    50   ~ 0
-GPIO25(GEN6)
-Text Label 8650 3550 0    50   ~ 0
-GPIO8(SPI0_CE_N)
-Text Label 8650 3250 0    50   ~ 0
-GPIO11(SPI0_SCK)
-Text Label 8650 3350 0    50   ~ 0
-GPIO9(SPI0_MISO)
-Text Label 8650 3450 0    50   ~ 0
-GPIO10(SPI0_MOSI)
-Wire Wire Line
-	10650 3150 9900 3150
-Wire Wire Line
-	9900 3250 10650 3250
-Wire Wire Line
-	8650 3650 9400 3650
-Wire Wire Line
-	9400 3550 8650 3550
-Wire Wire Line
-	8650 3450 9400 3450
-Wire Wire Line
-	9400 3350 8650 3350
-Wire Wire Line
-	9400 3250 8650 3250
-Wire Wire Line
-	8450 3150 9400 3150
-$Comp
-L Connector_Generic:Conn_02x06_Counter_Clockwise J2
-U 1 1 5D725DDF
-P 9600 3350
-F 0 "J2" H 9650 3767 50  0000 C CNN
-F 1 "Conn_02x06_Counter_Clockwise" H 9650 3676 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Vertical" H 9600 3350 50  0001 C CNN
-F 3 "~" H 9600 3350 50  0001 C CNN
-	1    9600 3350
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2000 4200 2000 4250
 Wire Wire Line
@@ -1191,7 +1123,7 @@ U 1 1 5F84797F
 P 2900 3950
 F 0 "J6" H 2980 3992 50  0000 L CNN
 F 1 "CAN_LogicAnalyzer" H 2980 3901 50  0000 L CNN
-F 2 "" H 2900 3950 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal" H 2900 3950 50  0001 C CNN
 F 3 "~" H 2900 3950 50  0001 C CNN
 	1    2900 3950
 	1    0    0    -1  
