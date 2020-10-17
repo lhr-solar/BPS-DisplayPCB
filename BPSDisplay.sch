@@ -1132,4 +1132,26 @@ Text Label 2400 4050 2    50   ~ 0
 CAN2_RX
 Text Label 2400 3950 2    50   ~ 0
 CAN2_TX
+$Comp
+L utsvt-misc:Logo_Placeholder LOGO1
+U 1 1 5F8BDCC5
+P 5500 7150
+F 0 "LOGO1" H 5500 7300 50  0001 C CNN
+F 1 "Logo_Placeholder" H 5640 7150 50  0000 L CNN
+F 2 "UTSVT_Special:UTSVT_Logo_Symbol" H 5500 7225 50  0001 C CNN
+F 3 "" H 5500 7225 50  0001 C CNN
+	1    5500 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L utsvt-misc:Logo_Placeholder LOGO2
+U 1 1 5F8C0DEB
+P 5500 6800
+F 0 "LOGO2" H 5500 6950 50  0001 C CNN
+F 1 "Logo_Placeholder" H 5640 6800 50  0000 L CNN
+F 2 "UTSVT_Special:Hallock_Image_Tiny" H 5500 6875 50  0001 C CNN
+F 3 "" H 5500 6875 50  0001 C CNN
+	1    5500 6800
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
