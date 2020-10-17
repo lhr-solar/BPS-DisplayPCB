@@ -356,7 +356,7 @@ U 1 1 59AD464A
 P 2250 2000
 F 0 "P1" H 2300 3117 50  0000 C CNN
 F 1 "Conn_02x20_Odd_Even" H 2300 3026 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Horizontal" H -2600 1050 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Vertical" H -2600 1050 50  0001 C CNN
 F 3 "" H -2600 1050 50  0001 C CNN
 	1    2250 2000
 	1    0    0    -1  
@@ -998,7 +998,7 @@ U 1 1 5F8B1965
 P 9650 4450
 F 0 "J7" H 9730 4492 50  0000 L CNN
 F 1 "SPI0_LogicAnalyzer" H 9730 4401 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Horizontal" H 9650 4450 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 9650 4450 50  0001 C CNN
 F 3 "~" H 9650 4450 50  0001 C CNN
 	1    9650 4450
 	1    0    0    -1  
@@ -1040,7 +1040,7 @@ U 1 1 5F9133E1
 P 9650 5200
 F 0 "J8" H 9730 5192 50  0000 L CNN
 F 1 "GEN_LogicAnalyzer" H 9730 5101 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Horizontal" H 9650 5200 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 9650 5200 50  0001 C CNN
 F 3 "~" H 9650 5200 50  0001 C CNN
 	1    9650 5200
 	1    0    0    -1  
@@ -1076,7 +1076,7 @@ U 1 1 5F937701
 P 9650 5950
 F 0 "J9" H 9730 5992 50  0000 L CNN
 F 1 "USART_LogicAnalyzer" H 9730 5901 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal" H 9650 5950 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 9650 5950 50  0001 C CNN
 F 3 "~" H 9650 5950 50  0001 C CNN
 	1    9650 5950
 	1    0    0    -1  
@@ -1123,7 +1123,7 @@ U 1 1 5F84797F
 P 2900 3950
 F 0 "J6" H 2980 3992 50  0000 L CNN
 F 1 "CAN_LogicAnalyzer" H 2980 3901 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal" H 2900 3950 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 2900 3950 50  0001 C CNN
 F 3 "~" H 2900 3950 50  0001 C CNN
 	1    2900 3950
 	1    0    0    -1  
