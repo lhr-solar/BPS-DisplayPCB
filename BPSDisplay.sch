@@ -16,7 +16,7 @@ $EndDescr
 Text Notes 650  7600 0    50   ~ 0
 ID_SD and ID_SC PINS:\nThese pins are reserved for HAT ID EEPROM.\n\nAt boot time this I2C interface will be\ninterrogated to look for an EEPROM\nthat identifes the attached board and\nallows automagic setup of the GPIOs\n(and optionally, Linux drivers).\n\nDO NOT USE these pins for anything other\nthan attaching an I2C ID EEPROM. Leave\nunconnected if ID EEPROM not required.
 $Comp
-L BPSDisplay-rescue:Mounting_Hole-Mechanical-BPSDisplay-rescue MK1
+L Mechanical:MountingHole MK1
 U 1 1 5834FB2E
 P 3000 7200
 F 0 "MK1" H 3100 7246 50  0000 L CNN
@@ -27,7 +27,7 @@ F 3 "" H 3000 7200 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L BPSDisplay-rescue:Mounting_Hole-Mechanical-BPSDisplay-rescue MK2
+L Mechanical:MountingHole MK2
 U 1 1 5834FBEF
 P 3450 7200
 F 0 "MK2" H 3550 7246 50  0000 L CNN
@@ -38,7 +38,7 @@ F 3 "" H 3450 7200 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L BPSDisplay-rescue:Mounting_Hole-Mechanical-BPSDisplay-rescue MK4
+L Mechanical:MountingHole MK4
 U 1 1 5834FC19
 P 3000 7400
 F 0 "MK4" H 3100 7446 50  0000 L CNN
@@ -836,60 +836,6 @@ Text Label 4850 3900 0    50   ~ 0
 USART6_TX
 Text Label 4850 4000 0    50   ~ 0
 USART6_RX
-$Comp
-L power:GND #PWR025
-U 1 1 5D764CDB
-P 2000 6250
-F 0 "#PWR025" H 2000 6000 50  0001 C CNN
-F 1 "GND" H 2000 6100 50  0000 C CNN
-F 2 "" H 2000 6250 50  0000 C CNN
-F 3 "" H 2000 6250 50  0000 C CNN
-	1    2000 6250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2000 6250 2000 6150
-Wire Wire Line
-	2000 6150 1900 6150
-Wire Wire Line
-	1900 6050 2250 6050
-Wire Wire Line
-	2250 6050 2250 5850
-$Comp
-L power:+3.3V #PWR024
-U 1 1 5D771241
-P 2250 5850
-F 0 "#PWR024" H 2250 5700 50  0001 C CNN
-F 1 "+3.3V" H 2250 5990 50  0000 C CNN
-F 2 "" H 2250 5850 50  0000 C CNN
-F 3 "" H 2250 5850 50  0000 C CNN
-	1    2250 5850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2000 5950 2000 5850
-$Comp
-L power:+5V #PWR023
-U 1 1 5D77123B
-P 2000 5850
-F 0 "#PWR023" H 2000 5700 50  0001 C CNN
-F 1 "+5V" H 2000 5990 50  0000 C CNN
-F 2 "" H 2000 5850 50  0000 C CNN
-F 3 "" H 2000 5850 50  0000 C CNN
-	1    2000 5850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1900 5950 2000 5950
-$Sheet
-S 1150 5850 750  400 
-U 5D76E7C8
-F0 "Power Dist" 50
-F1 "PowerDist.sch" 50
-F2 "GND" O R 1900 6150 50 
-F3 "+3.3V" O R 1900 6050 50 
-F4 "+5V" O R 1900 5950 50 
-$EndSheet
 NoConn ~ 6750 1700
 NoConn ~ 6750 1800
 NoConn ~ 6750 1900
@@ -918,7 +864,7 @@ NoConn ~ 5350 3300
 NoConn ~ 5350 3400
 NoConn ~ 5350 3500
 $Comp
-L BPSDisplay-rescue:Mounting_Hole-Mechanical-BPSDisplay-rescue MK3
+L Mechanical:MountingHole MK3
 U 1 1 5D979DD2
 P 4650 7200
 F 0 "MK3" H 4750 7246 50  0000 L CNN
@@ -929,7 +875,7 @@ F 3 "" H 4650 7200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L BPSDisplay-rescue:Mounting_Hole-Mechanical-BPSDisplay-rescue MK5
+L Mechanical:MountingHole MK5
 U 1 1 5D97A2E5
 P 4650 7400
 F 0 "MK5" H 4750 7446 50  0000 L CNN
@@ -942,7 +888,6 @@ $EndComp
 Wire Wire Line
 	9800 1400 9800 1350
 NoConn ~ 5350 4300
-NoConn ~ 5350 4400
 NoConn ~ 5350 4500
 Wire Wire Line
 	5150 1900 5350 1900
@@ -1012,7 +957,7 @@ GPIO10(SPI0_MOSI)
 Text Label 8500 4650 0    50   ~ 0
 GPIO8(SPI0_CE_N)
 $Comp
-L BPSDisplay:GND #PWR020
+L power:GND #PWR020
 U 1 1 5F8C3D7F
 P 9400 4150
 F 0 "#PWR020" H 9400 3900 50  0001 C CNN
@@ -1046,7 +991,7 @@ F 3 "~" H 9650 5200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L BPSDisplay:GND #PWR022
+L power:GND #PWR022
 U 1 1 5F91429A
 P 9450 5000
 F 0 "#PWR022" H 9450 4750 50  0001 C CNN
@@ -1082,7 +1027,7 @@ F 3 "~" H 9650 5950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L BPSDisplay:GND #PWR029
+L power:GND #PWR029
 U 1 1 5F937BE0
 P 9450 5750
 F 0 "#PWR029" H 9450 5500 50  0001 C CNN
@@ -1137,7 +1082,7 @@ L utsvt-misc:Logo_Placeholder LOGO1
 U 1 1 5F8BDCC5
 P 5500 7150
 F 0 "LOGO1" H 5500 7300 50  0001 C CNN
-F 1 "Logo_Placeholder" H 5640 7150 50  0000 L CNN
+F 1 "UTSVT" H 5640 7150 50  0000 L CNN
 F 2 "UTSVT_Special:UTSVT_Logo_Symbol" H 5500 7225 50  0001 C CNN
 F 3 "" H 5500 7225 50  0001 C CNN
 	1    5500 7150
@@ -1148,10 +1093,111 @@ L utsvt-misc:Logo_Placeholder LOGO2
 U 1 1 5F8C0DEB
 P 5500 6800
 F 0 "LOGO2" H 5500 6950 50  0001 C CNN
-F 1 "Logo_Placeholder" H 5640 6800 50  0000 L CNN
+F 1 "Dr. Hallock" H 5640 6800 50  0000 L CNN
 F 2 "UTSVT_Special:Hallock_Image_Tiny" H 5500 6875 50  0001 C CNN
 F 3 "" H 5500 6875 50  0001 C CNN
 	1    5500 6800
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 1100 4950 750  400 
+U 5D76E7C8
+F0 "Power Dist" 50
+F1 "PowerDist.sch" 50
+F2 "GND" O R 1850 5250 50 
+F3 "+3.3V" O R 1850 5150 50 
+F4 "+5V" O R 1850 5050 50 
+$EndSheet
+Wire Wire Line
+	1850 5050 1950 5050
+$Comp
+L power:+5V #PWR023
+U 1 1 5D77123B
+P 1950 4950
+F 0 "#PWR023" H 1950 4800 50  0001 C CNN
+F 1 "+5V" H 1950 5090 50  0000 C CNN
+F 2 "" H 1950 4950 50  0000 C CNN
+F 3 "" H 1950 4950 50  0000 C CNN
+	1    1950 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 5050 1950 4950
+$Comp
+L power:+3.3V #PWR024
+U 1 1 5D771241
+P 2200 4950
+F 0 "#PWR024" H 2200 4800 50  0001 C CNN
+F 1 "+3.3V" H 2200 5090 50  0000 C CNN
+F 2 "" H 2200 4950 50  0000 C CNN
+F 3 "" H 2200 4950 50  0000 C CNN
+	1    2200 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 5150 2200 4950
+Wire Wire Line
+	1850 5150 2200 5150
+Wire Wire Line
+	1950 5250 1850 5250
+Wire Wire Line
+	1950 5350 1950 5250
+$Comp
+L power:GND #PWR025
+U 1 1 5D764CDB
+P 1950 5350
+F 0 "#PWR025" H 1950 5100 50  0001 C CNN
+F 1 "GND" H 1950 5200 50  0000 C CNN
+F 2 "" H 1950 5350 50  0000 C CNN
+F 3 "" H 1950 5350 50  0000 C CNN
+	1    1950 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_ALT D?
+U 1 1 5FDE8C5D
+P 4250 4200
+AR Path="/5D76E7C8/5FDE8C5D" Ref="D?"  Part="1" 
+AR Path="/5FDE8C5D" Ref="D2"  Part="1" 
+F 0 "D2" V 4288 4082 50  0000 R CNN
+F 1 "PowerOn" V 4197 4082 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 4250 4200 50  0001 C CNN
+F 3 "~" H 4250 4200 50  0001 C CNN
+F 4 "Red" V 4250 4200 50  0001 C CNN "Color"
+F 5 "" V 4250 4200 50  0001 C CNN "P/N"
+	1    4250 4200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FDE8C63
+P 4250 3850
+AR Path="/5D76E7C8/5FDE8C63" Ref="R?"  Part="1" 
+AR Path="/5FDE8C63" Ref="R4"  Part="1" 
+F 0 "R4" H 4320 3896 50  0000 L CNN
+F 1 "750" H 4320 3805 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4180 3850 50  0001 C CNN
+F 3 "~" H 4250 3850 50  0001 C CNN
+	1    4250 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 4050 4250 4000
+Wire Wire Line
+	5350 4400 4250 4400
+Wire Wire Line
+	4250 4350 4250 4400
+Wire Wire Line
+	4250 3700 4250 3650
+$Comp
+L power:+3.3V #PWR0101
+U 1 1 5FE10F92
+P 4250 3650
+F 0 "#PWR0101" H 4250 3500 50  0001 C CNN
+F 1 "+3.3V" H 4250 3790 50  0000 C CNN
+F 2 "" H 4250 3650 50  0000 C CNN
+F 3 "" H 4250 3650 50  0000 C CNN
+	1    4250 3650
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

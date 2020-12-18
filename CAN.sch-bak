@@ -36,17 +36,6 @@ F 3 "" H 8000 3550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Jumper_NC_Small JP1
-U 1 1 5C2B4308
-P 8100 3250
-F 0 "JP1" H 8100 3330 50  0000 C CNN
-F 1 "Termination Resistors" H 8100 3200 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8100 3250 50  0001 C CNN
-F 3 "" H 8100 3250 50  0001 C CNN
-	1    8100 3250
-	-1   0    0    1   
-$EndComp
-$Comp
 L Device:C_Small C14
 U 1 1 5C2B434A
 P 6550 3200
@@ -188,10 +177,6 @@ Wire Wire Line
 	7300 4000 7300 3950
 Wire Wire Line
 	7300 3950 7550 3950
-Text Label 8000 3350 2    50   ~ 0
-TERM_H
-Text Label 8200 3350 0    50   ~ 0
-TERM_L
 $Comp
 L utsvt-chips:CDSOT23-T24CAN U3
 U 1 1 5F5F7FE5
@@ -206,12 +191,12 @@ $EndComp
 Text Notes 7950 2450 0    40   ~ 0
 CAN Bus\nProtection
 $Comp
-L BPSMaster-rescue:CANConnector-utsvt-connectors J3
+L utsvt-connectors:CANConnector J3
 U 1 1 5F5FC1DE
 P 9300 3850
 F 0 "J3" H 9122 3802 60  0000 R CNN
 F 1 "CAN_Out" H 9500 4100 60  0000 R CNN
-F 2 "UTSVT_Connectors:Molex_MicroFit3.0_1x4xP3.00mm_PolarizingPeg_Vertical" H 9450 4150 60  0001 C CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43650-0400_1x04_P3.00mm_Horizontal" H 9450 4150 60  0001 C CNN
 F 3 "" H 9450 4150 60  0001 C CNN
 	1    9300 3850
 	1    0    0    -1  
@@ -537,9 +522,11 @@ Wire Wire Line
 	9800 3800 9650 3800
 Connection ~ 8700 3150
 $Comp
-L BPSMaster-rescue:ADM3055E-utsvt-chips U2
+L utsvt-chips:ADM3055E U2
 U 1 1 5F5F3964
 P 4350 3600
+AR Path="/5F5F3964" Ref="U2"  Part="1" 
+AR Path="/5D6B2C88/5F5F3964" Ref="U2"  Part="1" 
 F 0 "U2" H 4350 4397 60  0000 C CNN
 F 1 "ADM3055E" H 4350 4291 60  0000 C CNN
 F 2 "UTSVT_ICs:SOIC-20W_7.5x15.4mm_Pitch1.27mm" H 4350 3700 60  0001 C CNN
@@ -549,4 +536,43 @@ F 3 "" H 4350 3700 60  0001 C CNN
 $EndComp
 Wire Wire Line
 	2500 3100 3650 3100
+Wire Wire Line
+	8200 3250 8000 3250
+$Comp
+L utsvt-connectors:CANConnector J2
+U 1 1 5FE32256
+P 9300 4900
+F 0 "J2" H 9122 4852 60  0000 R CNN
+F 1 "CAN_Out" H 9500 5150 60  0000 R CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43650-0400_1x04_P3.00mm_Horizontal" H 9450 5200 60  0001 C CNN
+F 3 "" H 9450 5200 60  0001 C CNN
+	1    9300 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9650 3700 9700 3700
+Wire Wire Line
+	9700 3700 9700 4750
+Wire Wire Line
+	9700 4750 9650 4750
+Connection ~ 9650 3700
+Wire Wire Line
+	9900 3800 9900 4850
+Wire Wire Line
+	9900 4850 9650 4850
+Wire Wire Line
+	9800 3800 9900 3800
+Connection ~ 9800 3800
+Wire Wire Line
+	9800 4150 9800 4950
+Wire Wire Line
+	9800 4950 9650 4950
+Connection ~ 9800 4150
+Wire Wire Line
+	9650 4250 10000 4250
+Wire Wire Line
+	10000 4250 10000 5050
+Wire Wire Line
+	10000 5050 9650 5050
+Connection ~ 9650 4250
 $EndSCHEMATC
