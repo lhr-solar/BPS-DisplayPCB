@@ -1200,4 +1200,15 @@ F 3 "" H 4250 3650 50  0000 C CNN
 	1    4250 3650
 	1    0    0    -1  
 $EndComp
+$Comp
+L Mechanical:MountingHole MK6
+U 1 1 60697865
+P 4650 7600
+F 0 "MK6" H 4750 7646 50  0000 L CNN
+F 1 "M3" H 4750 7555 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3mm" H 4650 7600 50  0001 C CNN
+F 3 "" H 4650 7600 50  0001 C CNN
+	1    4650 7600
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
