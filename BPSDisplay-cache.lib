@@ -1,11 +1,11 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# Connector_Generic_Conn_01x02
+# Connector_Generic_Conn_01x03
 #
-DEF Connector_Generic_Conn_01x02 J 0 40 Y N 1 F N
-F0 "J" 0 100 50 H V C CNN
-F1 "Connector_Generic_Conn_01x02" 0 -200 50 H V C CNN
+DEF Connector_Generic_Conn_01x03 J 0 40 Y N 1 F N
+F0 "J" 0 200 50 H V C CNN
+F1 "Connector_Generic_Conn_01x03" 0 -200 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -14,9 +14,11 @@ $ENDFPLIST
 DRAW
 S -50 -95 0 -105 1 1 6 N
 S -50 5 0 -5 1 1 6 N
-S -50 50 50 -150 1 1 10 f
-X Pin_1 1 -200 0 150 R 50 50 1 1 P
-X Pin_2 2 -200 -100 150 R 50 50 1 1 P
+S -50 105 0 95 1 1 6 N
+S -50 150 50 -150 1 1 10 f
+X Pin_1 1 -200 100 150 R 50 50 1 1 P
+X Pin_2 2 -200 0 150 R 50 50 1 1 P
+X Pin_3 3 -200 -100 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
@@ -43,42 +45,28 @@ X Pin_4 4 -200 -200 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Connector_Generic_Conn_02x06_Counter_Clockwise
+# Connector_Generic_Conn_01x05
 #
-DEF Connector_Generic_Conn_02x06_Counter_Clockwise J 0 40 Y N 1 F N
-F0 "J" 50 300 50 H V C CNN
-F1 "Connector_Generic_Conn_02x06_Counter_Clockwise" 50 -400 50 H V C CNN
+DEF Connector_Generic_Conn_01x05 J 0 40 Y N 1 F N
+F0 "J" 0 300 50 H V C CNN
+F1 "Connector_Generic_Conn_01x05" 0 -300 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
- Connector*:*_2x??_*
+ Connector*:*_1x??_*
 $ENDFPLIST
 DRAW
-S -50 -295 0 -305 1 1 6 N
 S -50 -195 0 -205 1 1 6 N
 S -50 -95 0 -105 1 1 6 N
 S -50 5 0 -5 1 1 6 N
 S -50 105 0 95 1 1 6 N
 S -50 205 0 195 1 1 6 N
-S -50 250 150 -350 1 1 10 f
-S 150 -295 100 -305 1 1 6 N
-S 150 -195 100 -205 1 1 6 N
-S 150 -95 100 -105 1 1 6 N
-S 150 5 100 -5 1 1 6 N
-S 150 105 100 95 1 1 6 N
-S 150 205 100 195 1 1 6 N
+S -50 250 50 -250 1 1 10 f
 X Pin_1 1 -200 200 150 R 50 50 1 1 P
-X Pin_10 10 300 0 150 L 50 50 1 1 P
-X Pin_11 11 300 100 150 L 50 50 1 1 P
-X Pin_12 12 300 200 150 L 50 50 1 1 P
 X Pin_2 2 -200 100 150 R 50 50 1 1 P
 X Pin_3 3 -200 0 150 R 50 50 1 1 P
 X Pin_4 4 -200 -100 150 R 50 50 1 1 P
 X Pin_5 5 -200 -200 150 R 50 50 1 1 P
-X Pin_6 6 -200 -300 150 R 50 50 1 1 P
-X Pin_7 7 300 -300 150 L 50 50 1 1 P
-X Pin_8 8 300 -200 150 L 50 50 1 1 P
-X Pin_9 9 300 -100 150 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
@@ -272,25 +260,6 @@ X ~ 2 0 -100 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device_Jumper_NC_Small
-#
-DEF Device_Jumper_NC_Small JP 0 30 N N 1 F N
-F0 "JP" 0 80 50 H V C CNN
-F1 "Device_Jumper_NC_Small" 10 -60 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- SolderJumper*Bridged*
-$ENDFPLIST
-DRAW
-A 0 -10 57 450 1350 0 1 0 N 40 30 -40 30
-C -40 0 20 0 1 0 N
-C 40 0 20 0 1 0 N
-X 1 1 -100 0 40 R 50 50 0 1 P
-X 2 2 100 0 40 L 50 50 0 1 P
-ENDDRAW
-ENDDEF
-#
 # Device_L
 #
 DEF Device_L L 0 40 N N 1 F N
@@ -434,6 +403,21 @@ X PC1 9 -700 -200 100 R 50 50 1 1 B
 ENDDRAW
 ENDDEF
 #
+# Mechanical_MountingHole
+#
+DEF Mechanical_MountingHole H 0 40 Y Y 1 F N
+F0 "H" 0 200 50 H V C CNN
+F1 "Mechanical_MountingHole" 0 125 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ MountingHole*
+$ENDFPLIST
+DRAW
+C 0 0 50 0 1 50 N
+ENDDRAW
+ENDDEF
+#
 # Regulator_Linear_NCP1117-3.3_SOT223
 #
 DEF Regulator_Linear_NCP1117-3.3_SOT223 U 0 10 Y Y 1 F N
@@ -561,6 +545,70 @@ X pwr 1 0 0 0 U 50 50 0 0 w
 ENDDRAW
 ENDDEF
 #
+# utsvt-chips_ADM3055E
+#
+DEF utsvt-chips_ADM3055E U 0 40 Y Y 1 F N
+F0 "U" 0 650 60 H V C CNN
+F1 "utsvt-chips_ADM3055E" 200 -100 60 H V C CNN
+F2 "UTSVT_ICs:SOIC-20W_7.5x15.4mm_Pitch1.27mm" 0 100 60 H I C CNN
+F3 "" 0 100 60 H I C CNN
+DRAW
+S -500 600 500 -600 0 1 0 f
+P 2 0 1 0 -100 600 -100 -600 N
+X GND_In 1 -700 300 200 R 50 50 1 1 W
+X GND_In 10 -700 100 200 R 50 50 1 1 W
+X GND_ISO_In 11 700 50 200 L 50 50 1 1 W
+X RS 12 700 -550 200 L 50 50 1 1 I
+X CAN_L 13 700 -350 200 L 50 50 1 1 B
+X CAN_H 14 700 -250 200 L 50 50 1 1 B
+X GND_ISO_In 15 700 150 200 L 50 50 1 1 W
+X V_ISO_In 16 700 550 200 L 50 50 1 1 W
+X AUX_Out 17 700 -450 200 L 50 50 1 1 O
+X GND_ISO_Out 18 700 250 200 L 50 50 1 1 w
+X V_ISO_Out 19 700 450 200 L 50 50 1 1 w
+X GND_In 2 -700 200 200 R 50 50 1 1 W
+X GND_ISO_Out 20 700 350 200 L 50 50 1 1 w
+X V_In 3 -700 500 200 R 50 50 1 1 W
+X V_IO 4 -700 400 200 R 50 50 1 1 W
+X RX 5 -700 -200 200 R 50 50 1 1 O
+X SILENT 6 -700 -400 200 R 50 50 1 1 I
+X TX 7 -700 -100 200 R 50 50 1 1 I
+X STDBY 8 -700 -500 200 R 50 50 1 1 I
+X AUX_In 9 -700 -300 200 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# utsvt-chips_CDSOT23-T24CAN
+#
+DEF utsvt-chips_CDSOT23-T24CAN U 0 20 Y Y 1 F N
+F0 "U" 0 -150 60 H V C CNN
+F1 "utsvt-chips_CDSOT23-T24CAN" 0 150 60 H V C CNN
+F2 "Package_TO_SOT_SMD:SOT-23W" 0 0 60 H I C CNN
+F3 "" 0 0 60 H I C CNN
+DRAW
+S 250 100 -250 -100 0 1 0 f
+X CAN_H 1 -350 50 100 R 50 50 1 1 P
+X CAN_L 2 -350 -50 100 R 50 50 1 1 P
+X GND 3 350 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# utsvt-connectors_CANConnector
+#
+DEF utsvt-connectors_CANConnector J 0 40 Y Y 1 F N
+F0 "J" 0 -250 60 H V C CNN
+F1 "utsvt-connectors_CANConnector" 0 250 60 H V C CNN
+F2 "" 150 300 60 H I C CNN
+F3 "" 150 300 60 H I C CNN
+DRAW
+S 150 200 -150 -200 0 1 0 f
+X 5V 1 350 150 200 L 50 50 1 1 W
+X GND 2 350 50 200 L 50 50 1 1 W
+X CAN_H 3 350 -50 200 L 50 50 1 1 B
+X CAN_L 4 350 -150 200 L 50 50 1 1 B
+ENDDRAW
+ENDDEF
+#
 # utsvt-connectors_CarPowerConnector
 #
 DEF utsvt-connectors_CarPowerConnector J 0 40 Y Y 1 F N
@@ -572,6 +620,21 @@ DRAW
 S 100 150 -150 -150 0 1 0 f
 X +12V 1 300 100 200 L 50 50 1 1 w
 X GND 2 300 -100 200 L 50 50 1 1 w
+ENDDRAW
+ENDDEF
+#
+# utsvt-misc_Logo_Placeholder
+#
+DEF utsvt-misc_Logo_Placeholder LOGO 0 40 Y Y 1 F N
+F0 "LOGO" 0 150 50 H I C CNN
+F1 "utsvt-misc_Logo_Placeholder" 0 150 50 H V C CNN
+F2 "" 0 75 50 H I C CNN
+F3 "" 0 75 50 H I C CNN
+DRAW
+A 0 0 75 -1799 -1 0 1 0 N -75 0 75 0
+C 0 0 112 0 1 0 f
+P 2 0 1 0 -25 50 -25 0 N
+P 2 0 1 0 25 50 25 0 N
 ENDDRAW
 ENDDEF
 #
