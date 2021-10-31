@@ -866,23 +866,23 @@ NoConn ~ 5350 3500
 $Comp
 L Mechanical:MountingHole MK3
 U 1 1 5D979DD2
-P 4650 7200
-F 0 "MK3" H 4750 7246 50  0000 L CNN
-F 1 "M3" H 4750 7155 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3mm" H 4650 7200 50  0001 C CNN
-F 3 "" H 4650 7200 50  0001 C CNN
-	1    4650 7200
+P 4600 6950
+F 0 "MK3" H 4700 6996 50  0000 L CNN
+F 1 "M3" H 4700 6905 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3mm" H 4600 6950 50  0001 C CNN
+F 3 "" H 4600 6950 50  0001 C CNN
+	1    4600 6950
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole MK5
 U 1 1 5D97A2E5
-P 4650 7400
-F 0 "MK5" H 4750 7446 50  0000 L CNN
-F 1 "M3" H 4750 7355 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3mm" H 4650 7400 50  0001 C CNN
-F 3 "" H 4650 7400 50  0001 C CNN
-	1    4650 7400
+P 4600 7150
+F 0 "MK5" H 4700 7196 50  0000 L CNN
+F 1 "M3" H 4700 7105 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3mm" H 4600 7150 50  0001 C CNN
+F 3 "" H 4600 7150 50  0001 C CNN
+	1    4600 7150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1203,12 +1203,23 @@ $EndComp
 $Comp
 L Mechanical:MountingHole MK6
 U 1 1 60697865
-P 4650 7600
-F 0 "MK6" H 4750 7646 50  0000 L CNN
-F 1 "M3" H 4750 7555 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3mm" H 4650 7600 50  0001 C CNN
-F 3 "" H 4650 7600 50  0001 C CNN
-	1    4650 7600
+P 4600 7350
+F 0 "MK6" H 4700 7396 50  0000 L CNN
+F 1 "M3" H 4700 7305 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3mm" H 4600 7350 50  0001 C CNN
+F 3 "" H 4600 7350 50  0001 C CNN
+	1    4600 7350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole MK7
+U 1 1 5FDF38F4
+P 4600 7550
+F 0 "MK7" H 4700 7596 50  0000 L CNN
+F 1 "M3" H 4700 7505 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3mm" H 4600 7550 50  0001 C CNN
+F 3 "" H 4600 7550 50  0001 C CNN
+	1    4600 7550
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

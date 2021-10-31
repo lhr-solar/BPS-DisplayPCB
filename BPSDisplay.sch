@@ -350,17 +350,6 @@ Wire Wire Line
 	2650 2500 2650 2700
 Wire Wire Line
 	2650 2700 2650 3150
-$Comp
-L Connector_Generic:Conn_02x20_Odd_Even P1
-U 1 1 59AD464A
-P 2250 2000
-F 0 "P1" H 2300 3117 50  0000 C CNN
-F 1 "Conn_02x20_Odd_Even" H 2300 3026 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Vertical" H -2600 1050 50  0001 C CNN
-F 3 "" H -2600 1050 50  0001 C CNN
-	1    2250 2000
-	1    0    0    -1  
-$EndComp
 Connection ~ 2650 1700
 Wire Wire Line
 	2650 1300 2550 1300
@@ -1220,6 +1209,17 @@ F 1 "M3" H 4700 7505 50  0000 L CNN
 F 2 "MountingHole:MountingHole_3mm" H 4600 7550 50  0001 C CNN
 F 3 "" H 4600 7550 50  0001 C CNN
 	1    4600 7550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x20_Odd_Even P1
+U 1 1 59AD464A
+P 2250 2000
+F 0 "P1" H 2300 3117 50  0000 C CNN
+F 1 "Conn_02x20_Odd_Even" H 2300 3026 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Vertical" H -2600 1050 50  0001 C CNN
+F 3 "" H -2600 1050 50  0001 C CNN
+	1    2250 2000
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
